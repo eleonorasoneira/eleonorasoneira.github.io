@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
 
-// https://astro.build/config
+// https://eleonorasoneira.github.io
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
