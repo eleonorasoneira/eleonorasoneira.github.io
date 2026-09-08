@@ -1,4 +1,4 @@
-# 🌌 Personal Portfolio – Lautaro 
+# 🌌 Personal Portfolio – Eleonora Soneira 
 
 ---
 
