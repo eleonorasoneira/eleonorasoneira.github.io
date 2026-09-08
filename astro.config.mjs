@@ -6,7 +6,8 @@ import react from "@astrojs/react";
 
 // https://eleonorasoneira.github.io
 export default defineConfig({
-  site: 'https://eleonorasoneira.github.io', {
+  site: "https://eleonorasoneira.github.io",
+  vite: {
     plugins: [tailwindcss()],
   },
 
