@@ -1,4 +1,91 @@
+```astro
 <div id="particles-js" aria-hidden="true"></div>
+
+<script src="/particles.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof window.particlesJS === "undefined") {
+      console.error("Particles.js no se pudo cargar");
+      return;
+    }
+
+    window.particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 70,
+          density: {
+            enable: true,
+            value_area: 900
+          }
+        },
+
+        color: {
+          value: "#9ca3af"
+        },
+
+        shape: {
+          type: "circle"
+        },
+
+        opacity: {
+          value: 0.45,
+          random: true
+        },
+
+        size: {
+          value: 2,
+          random: true
+        },
+
+        line_linked: {
+          enable: true,
+          distance: 140,
+          color: "#9ca3af",
+          opacity: 0.18,
+          width: 1
+        },
+
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out"
+        }
+      },
+
+      interactivity: {
+        detect_on: "canvas",
+
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+
+          onclick: {
+            enable: false
+          },
+
+          resize: true
+        },
+
+        modes: {
+          grab: {
+            distance: 160,
+            line_linked: {
+              opacity: 0.4
+            }
+          }
+        }
+      },
+
+      retina_detect: true
+    });
+  });
+</script>
 
 <style>
   #particles-js {
@@ -9,79 +96,9 @@
     z-index: 0;
     pointer-events: none;
   }
+
+  #particles-js canvas {
+    display: block;
+  }
 </style>
-
-<script>
-  const script = document.createElement("script");
-
-  script.src = "/particles.js";
-
-  script.onload = () => {
-    if (window.particlesJS) {
-      window.particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 70,
-            density: {
-              enable: true,
-              value_area: 900
-            }
-          },
-          color: {
-            value: "#9ca3af"
-          },
-          shape: {
-            type: "circle"
-          },
-          opacity: {
-            value: 0.45,
-            random: true
-          },
-          size: {
-            value: 2,
-            random: true
-          },
-          line_linked: {
-            enable: true,
-            distance: 140,
-            color: "#9ca3af",
-            opacity: 0.18,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 1,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out"
-          }
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "grab"
-            },
-            onclick: {
-              enable: false
-            },
-            resize: true
-          },
-          modes: {
-            grab: {
-              distance: 160,
-              line_linked: {
-                opacity: 0.4
-              }
-            }
-          }
-        },
-        retina_detect: true
-      });
-    }
-  };
-
-  document.body.appendChild(script);
-</script>
+```
