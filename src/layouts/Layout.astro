@@ -2,20 +2,28 @@
 import "../styles/global.css";
 import Navbar from "../components/commons/navbar/navbar.astro";
 import Footer from "../components/commons/footer/footer.astro";
+import ParticlesBackground from "../components/ParticlesBackground.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Maria Eleonora Soneira | Portolio </title>
+    <title>Maria Eleonora Soneira | Portfolio</title>
   </head>
+
   <body class="bg-gray-950 text-white">
-    <Navbar />
-    <slot />
-    <Footer />
+    
+    <ParticlesBackground />
+
+    <div class="relative z-10">
+      <Navbar />
+      <slot />
+      <Footer />
+    </div>
+
   </body>
 </html>
