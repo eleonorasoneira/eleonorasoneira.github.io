@@ -1,24 +1,23 @@
-
---- 
+```astro
+---
 import SocialIcons from "../../commons/socialIcons/socialIcons.jsx";
-import TypeEfect from "../header/typeEfect.jsx";
+import TypeEfect from "./typeEfect.jsx";
 import MiFoto from "../../assets/img/MiFoto.jpg";
---- 
+---
+
+<header class="relative min-h-screen overflow-hidden">
 
   <main
-    class="relative z-10 flex items-center justify-end h-full px-8 md:px-16"
+    class="relative z-10 flex items-center justify-center min-h-screen px-8 md:px-16 pt-24"
   >
-    <div class="flex flex-row items-center gap-12 max-w-6xl">
-  
-  <!--<main
-    class="relative z-10 flex items-center h-full px-8 md:px-16 pt-24"
-  >
-    <div class="w-full flex flex-row items-center justify-between gap-12 max-w-7xl mx-auto">-->
+
+    <div class="flex flex-row items-center gap-12 max-w-6xl w-full">
 
       <!-- TEXTO -->
-      <div class="text-left max-w-2xl">
+      <div class="text-left max-w-2xl flex-1">
+
         <h1 class="text-4xl md:text-6xl font-bold text-white">
-          Hello! I'm<br /> 
+          Hello! I'm<br />
           Eleonora Soneira
         </h1>
 
@@ -27,11 +26,11 @@ import MiFoto from "../../assets/img/MiFoto.jpg";
         <p
           class="text-xs md:text-xl text-white max-w-sm md:max-w-xl font-semibold mt-3"
         >
-          Junior Data Analyst with additional experience in IT Support, hardware,
-          software and user assistance. I combine analytical thinking, problem
-          solving and effective communication. Experience working in multicultural
-          environments. Explore my projects, and if you
-          want to contact me, I'm just a message away!
+          Junior Data Analyst with additional experience in IT Support,
+          hardware, software and user assistance. I combine analytical
+          thinking, problem solving and effective communication. Experience
+          working in multicultural environments. Explore my projects, and if
+          you want to contact me, I'm just a message away!
         </p>
 
         <SocialIcons client:visible />
@@ -56,6 +55,8 @@ import MiFoto from "../../assets/img/MiFoto.jpg";
       </div>
 
     </div>
+
   </main>
 
-
+</header>
+```
