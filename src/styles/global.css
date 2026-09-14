@@ -18,16 +18,16 @@
 
 /* reglas hover (usar estas clases directamente) */
 .hover-text-secondary:hover {
-  color: #0debd8;
+  color: #0b988c;
 }
 .hover-bg-secondary:hover {
-  background-color: #0debd8;
+  background-color: #0b988c;
 }
 .hover\:bg-secondary:hover {
-  background-color: #0debd8;
+  background-color: #0b988c;
 }
 .hover\:text-secondary:hover {
-  color: #0debd8;
+  color: #0b988c;
 }
 
 .text-shadow {
