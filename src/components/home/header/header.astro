@@ -1,49 +1,65 @@
 ```astro
-<main
-  class="relative z-10 flex items-center h-full px-8 md:px-16 pt-24"
->
-  <div class="w-full flex flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
-    <!-- TEXTO -->
-    <div class="text-left max-w-2xl">
+<<<<<<< HEAD
+--- 
+import SocialIcons from "../../commons/socialIcons/socialIcons.jsx";
+import TypeEfect from "../header/typeEfect.jsx";
+import MiFoto from "../../assets/img/MiFoto.jpg";
+--- 
+<header class="relative h-screen overflow-hidden">
+  <main
+    class="relative z-10 flex items-center justify-end h-full px-8 md:px-16"
+  >
+    <div class="flex flex-row items-center gap-12 max-w-6xl">
 
-      <h1 class="text-4xl md:text-6xl font-bold text-white">
-        Hello! I'am<br /> 
-        Eleonora Soneira
-      </h1>
+      <!-- TEXTO -->
+      <div class="text-left max-w-2xl">
+=======
+  <!--<main
+    class="relative z-10 flex items-center h-full px-8 md:px-16 pt-24"
+  >
+    <div class="w-full flex flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
+  -->
+=======
 
-      <TypeEfect client:visible />
+        <h1 class="text-4xl md:text-6xl font-bold text-white">
+          Hello! I'm<br /> 
+          Eleonora Soneira
+        </h1>
 
-      <p
-        class="text-xs md:text-xl text-white max-w-sm md:max-w-xl font-semibold mt-3"
-      >
-        Junior Data Analyst with additional experience in IT Support, hardware,
-        software and user assistance. I combine analytical thinking, problem
-        solving and effective communication. Experience working in multicultural
-        environments. Explore my projects, and if you
-        want to contact me, I'm just a message away!
-      </p>
+        <TypeEfect client:visible />
 
-      <SocialIcons client:visible />
+        <p
+          class="text-xs md:text-xl text-white max-w-sm md:max-w-xl font-semibold mt-3"
+        >
+          Junior Data Analyst with additional experience in IT Support, hardware,
+          software and user assistance. I combine analytical thinking, problem
+          solving and effective communication. Experience working in multicultural
+          environments. Explore my projects, and if you
+          want to contact me, I'm just a message away!
+        </p>
 
-      <a
-        target="_blank"
-        href="https://docs.google.com/document/d/1Db0ZGGUdaI4TUlr6TWWR6pKto14oLSKmvopuXFMD9Uw/edit?tab=t.0"
-        class="inline-block px-6 py-3 bg-primary hover:bg-secondary mt-3 text-white font-semibold rounded-3xl transition-all duration-150 active:translate-0.5"
-      >
-        Resume
-      </a>
+        <SocialIcons client:visible />
+
+        <a
+          target="_blank"
+          href="https://docs.google.com/document/d/1Db0ZGGUdaI4TUlr6TWWR6pKto14oLSKmvopuXFMD9Uw/edit?tab=t.0"
+          class="inline-block px-6 py-3 bg-primary hover:bg-secondary mt-3 text-white font-semibold rounded-3xl transition-all duration-150 active:translate-0.5"
+        >
+          Resume
+        </a>
+
+      </div>
+
+      <!-- FOTO -->
+      <div class="flex-shrink-0">
+        <img
+          src={MiFoto.src}
+          alt="Eleonora Soneira"
+          class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full"
+        />
+      </div>
 
     </div>
-
-    <!-- FOTO -->
-    <div class="flex-shrink-0">
-      <img
-        src={MiFoto.src}
-        alt="Eleonora Soneira"
-        class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full"
-      />
-    </div>
-
-  </div>
-</main>
+  </main>
+</header>
 ```
