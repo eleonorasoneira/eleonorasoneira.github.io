@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 .primary {
-  color: #0debd8;
+  color: #00B8D4;
 }
 .secondary {
-  color: #0debd8;
+  color: #00B8D4;
 }
 .bg-primary {
-  background-color: #0debd8;
+  background-color: #00B8D4;
 }
 .bg-secondary {
-  background-color: #0debd8;
+  background-color: #00B8D4;
 }
 .text-primary {
-  color: #0debd8;
+  color: #00B8D4;
 }
 
 /* reglas hover (usar estas clases directamente) */
