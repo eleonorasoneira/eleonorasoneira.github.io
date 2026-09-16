@@ -4,10 +4,10 @@ const initParticles = () => {
   window.particlesJS("particles-js", {
     particles: {
       number: {
-        value: 70,
+        value: 130,
         density: {
           enable: true,
-          value_area: 900
+          value_area: 700
         }
       },
 
