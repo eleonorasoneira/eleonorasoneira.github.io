@@ -6,7 +6,7 @@ const TypewriterComponent = () => {
     <div className="notranslate mt-5 text-3xl font-bold">
       <Typewriter
         options={{
-          strings: ["Analista de Datos", "Python", "Power BI", "SQL"],
+          strings: ["Junior Data Analyst", "Data Visualization with Power BI", "Data Cleaning & ETL with Python", "Database Management with SQL"],
           autoStart: true,
           loop: true,
         }}
