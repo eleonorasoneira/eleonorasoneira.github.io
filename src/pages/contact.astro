@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import MiFoto from "../assets/img/MiFoto.jpg";
 import CopyMail from "../components/links/copyMail.jsx";
+import ParticlesBackground from "../components/ParticlesBackground.astro";
 
 const links = [
   {
@@ -14,8 +15,10 @@ const links = [
 ---
 
 <Layout>
+  <ParticlesBackground />
+
   <section
-    class="bg-gray-900 flex min-h-screen flex-col items-center justify-center px-6"
+    class="relative z-10 flex min-h-screen flex-col items-center justify-center px-6"
   >
     <div class="mb-2 mt-11">
       <div class="mb-2 mt-11">
